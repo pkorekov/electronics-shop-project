@@ -2,7 +2,7 @@
 
 import pytest
 from src.item import Item
-
+from src.phone import Phone
 
 @pytest.fixture
 def my_item():
@@ -35,3 +35,5 @@ def test_repr(my_item):
     assert repr(my_item) == "Item('bananas', 10, 2)"
 def test_str(my_item):
     assert str(my_item) == "bananas"
+
+

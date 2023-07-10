@@ -76,3 +76,7 @@ class Item:
         result = int(float(string_num))
         return result
 
+    def __add__(self, other) -> int:
+        if isinstance(other, Item):
+            return self.quantity + other.quantity
+        return None
